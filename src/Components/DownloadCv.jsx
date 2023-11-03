@@ -13,11 +13,10 @@ const Button = styled.button`
 
 function DownloadCV() {
   const handleDownload = () => {
-    // Logic to initiate the download
-    const cvUrl = 'your_cv_file.pdf'; // Replace with the actual path to your CV file
+    const cvUrl = 'your_cv_file.pdf'; 
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'your_cv.pdf'; // You can specify the downloaded file's name
+    link.download = 'your_cv.pdf'; 
     link.click();
   };
 
