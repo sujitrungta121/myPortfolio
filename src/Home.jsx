@@ -7,6 +7,7 @@ import { Body2, Display, H2 } from "./common/ui/Headings";
 import myimg from "../src/assets/image-sujit.jfif";
 // import { device } from "./common/ui/Resposive";
 import Footer from "./Components/Footer";
+import DownloadCV from "./Components/DownloadCv";
 
 const Container = styled(FlexBox)`
   width: 100%;
@@ -94,9 +95,10 @@ const Home = () => {
           <Button color="black">
             <Body2 color="white"> Learn More</Body2>
           </Button>
-          <Button color="black">
+          {/* <Button color="black">
             <Body2 color="white"> Download my CV</Body2>
-          </Button>
+          </Button> */}
+          <DownloadCV/>
         </FlexBox>
       </HomeContent>
     </Container>

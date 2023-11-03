@@ -3,6 +3,9 @@ import { H2, H3, H6 } from "./common/ui/Headings";
 import styled from "styled-components";
 import FlexBox from "./common/ui/FlexBox";
 import expenseTracker from "./assets/expense-tracker.jpg";
+import githubUser from "./assets/github-userfinder.jpg";
+import weatherApp from "./assets/Weather application.jpg";
+import musicApp from "./assets/music-app.jpg";
 const Container = styled(FlexBox)`
   width: 100%;
   padding-top: 10px;
@@ -21,7 +24,8 @@ const Body = styled(FlexBox)`
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  column-gap:20px;
   padding-top: 50px;
 `;
 const Project = styled(FlexBox)`
@@ -36,10 +40,23 @@ const Projects = () => {
         PROJECTS
       </H2>
       <Body>
-        <Project>
+      <Project>
           <Img src={expenseTracker} alt="no image" width="40px" height="40px" />
           <H6>Expense Tracker</H6>
         </Project>
+        <Project>
+          <Img src={githubUser} alt="no image" width="40px" height="40px" />
+          <H6>Github User</H6>
+        </Project>
+        <Project>
+          <Img src={musicApp} alt="no image" width="40px" height="40px" />
+          <H6>Music App</H6>
+        </Project>
+        <Project>
+          <Img src={weatherApp} alt="no image" width="40px" height="40px" />
+          <H6>Weather Application</H6>
+        </Project>
+
       </Body>
     </Container>
   );

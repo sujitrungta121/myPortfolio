@@ -46,6 +46,9 @@ const RightNavbar = ({ open }) => {
         <li>
           <Anchor to="/contact">Contact us</Anchor>
         </li>
+        <li>
+          <Anchor to="/experience">Experience</Anchor>
+        </li>
       </Ul>
     </div>
   );
