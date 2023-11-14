@@ -21,7 +21,7 @@ function DownloadCV() {
 
   return (
     <div>
-      <Button color="black" onClick={handleDownload}>Download My CV</Button>
+      <Button  onClick={handleDownload}>Download My CV</Button>
     </div>
   );
 }
